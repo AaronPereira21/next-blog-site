@@ -1,0 +1,16 @@
+{
+  "name": "Aaron",
+  "showcase": [
+    {
+      "discriminant": "youtubeVideoId",
+      "value": "2D0D8HE6uak"
+    },
+    {
+      "discriminant": "link",
+      "value": {
+        "label": "Google",
+        "url": "https://google.co.in/"
+      }
+    }
+  ]
+}
