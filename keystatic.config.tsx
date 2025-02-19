@@ -1,10 +1,26 @@
-import { config, collection, fields, component, singleton } from '@keystatic/core'
+import {
+  config,
+  collection,
+  fields,
+  component,
+  singleton,
+  LocalConfig,
+  CloudConfig,
+} from '@keystatic/core'
 import { ShowcaseYouTubeVideo } from './components/showcase-youtube-video'
 
+const isProd = process.env.NODE_ENV === 'production'
+
+const localMode: LocalConfig['storage'] = {
+  kind: 'local',
+}
+
+const remoteMode: CloudConfig['storage'] = {
+  kind: 'cloud',
+}
+
 export default config({
-  storage: {
-    kind: 'cloud',
-  },
+  storage: isProd ? remoteMode : localMode,
   cloud: {
     project: 'webvictory/next-blog-site',
   },
