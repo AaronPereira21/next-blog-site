@@ -1,0 +1,13 @@
+{
+  "name": "Gina",
+  "avatar": "/images/avatars/gina/avatar.jpeg",
+  "showcase": [
+    {
+      "discriminant": "link",
+      "value": {
+        "label": "Website",
+        "url": "http://www.frcrce.ac.in/"
+      }
+    }
+  ]
+}
