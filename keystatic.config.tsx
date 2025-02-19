@@ -3,7 +3,10 @@ import { ShowcaseYouTubeVideo } from './components/showcase-youtube-video'
 
 export default config({
   storage: {
-    kind: 'local',
+    kind: 'cloud',
+  },
+  cloud: {
+    project: 'webvictory/next-blog-site',
   },
   ui: {
     brand: {
